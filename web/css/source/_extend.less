@@ -1,0 +1,154 @@
+
+.sociallinks {
+   float: right;
+}
+
+.socialicons {
+	margin:-10px 0px -10px 0px;
+	width:30px;
+	height:30px;
+}
+
+// define colors :
+@dd-orange: #EF673E;
+@dd-blue: #95c9c4;
+
+@bb-pink: #FC8589;
+@bb-pink2: #FAB8C2;
+@bb-yellow: #FDEA8E;
+@bb-yellow2: #f9eea8A;
+@bb-yellow3: #fff8d7;
+@bb-blue: #7FCAF2;
+@bb-green: #B5E1B0;
+@bb-white: white;
+
+@color-blue2: #FFCD46; 
+@color-gray90: @bb-yellow3;
+@color-orange-red1: @bb-pink;
+@color-yellow-light1: @bb-green;
+@color-gray-middle3: @dd-blue;
+
+// text color:
+@primary__color: #333333;
+
+// Link colors:
+@link__color: @dd-orange;
+@link__hover__color: @bb-yellow;
+@link__visited__color: @dd-orange;
+
+// buttons:
+@button__color: @bb-green; 
+@button__background: @bb-yellow;
+@button__border: 1px solid @bb-yellow;
+
+
+// site colors:
+@navigation__background: @dd-orange;
+@submenu-desktop-item__hover__background: @dd-orange;
+
+
+@subment-item__active__border-color: black;
+
+@navigation-level0-item__active__border-color: @bb-pink2;
+@submenu-item__active__border-color: @bb-pink2;
+@navigation-desktop-level0-item__active__border-color: @bb-pink2;
+@submenu-desktop-item__active__border-color: @bb-pink2;
+
+
+@copyright__background-color: @dd-orange;
+
+// Messages:
+@message-success__background: @bb-green;
+@message-info__background: @bb-green;
+@message-warning__background: @bb-green;
+
+
+// buttons:
+.action {
+        &.primary {
+                background-color: @bb-yellow;
+                border-color: @bb-yellow;
+        }
+}
+
+
+//Logo:
+.header.content {
+    padding: 10px 20px 0;
+}
+
+@media (min-width: 768px) {
+        .checkout-cart-index, .cms-home,
+        .page-layout-2columns-left, .page-layout-1column  {
+                        max-width: none;
+                & .logo {
+                        margin: -53px auto 10px 0;
+                }
+        }
+        .page-header {
+                background-image: url("/pub/media/wysiwyg/header-background.png");
+        }
+}
+
+// checkout page. Classes: checkout-index-index page-layout-checkout
+.page-layout-checkout .logo {
+  		margin: 0px auto 10px 0;
+}
+
+// Shopping card hack, disable region
+
+[name="shippingAddress.region"] {
+        display: none;
+}
+
+// Other:
+.minicart-wrapper .action.showcart .counter.qty {
+	background: @bb-pink;
+}
+
+.modes-mode {
+	background-color: @bb-yellow;
+}
+
+.modes-mode.active {
+	background: @bb-yellow3;
+}
+
+.toolbar select {
+	    background-color: @bb-yellow;
+}
+
+// Mobile version:
+@media (max-width: 767px) {
+        .nav-sections-item-title.active {
+                border: solid;
+                border-width: 0 0 3px;
+                border-color: @bb-pink2;
+                background: @bb-pink;
+        }
+
+//	.logo img {
+//		margin: -10px auto -10px 0;
+//	}
+
+        a, .alink {
+                color: @bb-yellow;
+        }
+
+        .nav-sections-item-title {
+                border-width: 1 0 1 0px;
+//                border-color: @bb-pink2;
+                border: none;
+                background: @bb-pink;
+        }
+        .header.content {
+                background: @bb-green;
+        }
+}
+
+
+
+/*
+lib/web/css/source/lib/variables/_messages.less
+*/
+
