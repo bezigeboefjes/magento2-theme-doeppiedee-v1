@@ -11,7 +11,8 @@
 
 // define colors :
 @dd-orange: #EF673E;
-@dd-blue: #95c9c4;
+@dd-green: #95c9c4;
+@dd-white: white;
 
 @bb-pink: #FC8589;
 @bb-pink2: #FAB8C2;
@@ -20,26 +21,25 @@
 @bb-yellow3: #fff8d7;
 @bb-blue: #7FCAF2;
 @bb-green: #B5E1B0;
-@bb-white: white;
 
 @color-blue2: #FFCD46; 
 @color-gray90: @bb-yellow3;
-@color-orange-red1: @bb-pink;
+@color-orange-red1: @dd-green;
 @color-yellow-light1: @bb-green;
-@color-gray-middle3: @dd-blue;
+@color-gray-middle3: @dd-green;
 
 // text color:
 @primary__color: #333333;
 
 // Link colors:
 @link__color: @dd-orange;
-@link__hover__color: @bb-yellow;
-@link__visited__color: @dd-orange;
+@link__hover__color: @dd-orange;
+@link__visited__color: @color-orange-red1;
 
 // buttons:
-@button__color: @bb-green; 
-@button__background: @bb-yellow;
-@button__border: 1px solid @bb-yellow;
+@button__color: @dd-white; 
+@button__background: @dd-orange;
+@button__border: 1px solid @dd-orange;
 
 
 // site colors:
@@ -66,8 +66,8 @@
 // buttons:
 .action {
         &.primary {
-                background-color: @bb-yellow;
-                border-color: @bb-yellow;
+                background-color: @dd-orange;
+                border-color: @dd-orange;
         }
 }
 
@@ -103,28 +103,28 @@
 
 // Other:
 .minicart-wrapper .action.showcart .counter.qty {
-	background: @bb-pink;
+	background: @dd-orange;
 }
 
-.modes-mode {
-	background-color: @bb-yellow;
-}
+//.modes-mode {
+//	background-color: @dd-orange;
+//}
 
-.modes-mode.active {
-	background: @bb-yellow3;
-}
+//.modes-mode.active {
+//	background: @bb-yellow3;
+//}
 
-.toolbar select {
-	    background-color: @bb-yellow;
-}
+//.toolbar select {
+//	    background-color: @dd-orange;
+//}
 
 // Mobile version:
 @media (max-width: 767px) {
         .nav-sections-item-title.active {
                 border: solid;
                 border-width: 0 0 3px;
-                border-color: @bb-pink2;
-                background: @bb-pink;
+                border-color: @dd-orange;
+                background: @dd-orange;
         }
 
 //	.logo img {
@@ -132,17 +132,17 @@
 //	}
 
         a, .alink {
-                color: @bb-yellow;
+                color: @dd-orange;
         }
 
         .nav-sections-item-title {
                 border-width: 1 0 1 0px;
 //                border-color: @bb-pink2;
                 border: none;
-                background: @bb-pink;
+                background: @dd-orange;
         }
         .header.content {
-                background: @bb-green;
+                background: @dd-orange;
         }
 }
 
