@@ -12,7 +12,9 @@
 // define colors :
 @dd-orange: #EF673E;
 @dd-green: #95c9c4;
+@dd-green2: #c0cc80;
 @dd-white: white;
+@dd-gray: #d1d1d1;
 
 @bb-pink: #FC8589;
 @bb-pink2: #FAB8C2;
@@ -118,32 +120,53 @@
 //	    background-color: @dd-orange;
 //}
 
+
 // Mobile version:
 @media (max-width: 767px) {
         .nav-sections-item-title.active {
                 border: solid;
-                border-width: 0 0 3px;
-                border-color: @dd-orange;
+                border-width: 0px 0px 0px 0px;
+                border-color: @dd-gray;
+		border-bottom: 3px solid @dd-gray;
                 background: @dd-orange;
         }
 
-//	.logo img {
-//		margin: -10px auto -10px 0;
-//	}
+        .nav-sections-item-title {
+                border-width: 0px 0px 0px 0px;
+                background: @dd-orange;
+        }
+
+        .nav-sections-item-switch {
+                color: @dd-white;
+        }
+
+        .nav-sections-item-switch:hover {
+                color: @bb-yellow;
+        }
+
+        .nav-sections-item-switch:active {
+                color: @bb-yellow;
+        }
+
+	.logo {
+		margin: 0px 0px 10px 90px;
+	}
+
+	.logo img {
+		content:url("http://dev.doeppiedee.nl/pub/media/wysiwyg/Doeppiedee-header-02.png");
+	}
 
         a, .alink {
                 color: @dd-orange;
         }
 
-        .nav-sections-item-title {
-                border-width: 1 0 1 0px;
-//                border-color: @bb-pink2;
-                border: none;
-                background: @dd-orange;
-        }
         .header.content {
-                background: @dd-orange;
+                background: @dd-green;
         }
+
+	.doeppiedee-widget1 {
+		display: none;
+	}
 }
 
 
