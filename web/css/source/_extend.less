@@ -186,6 +186,9 @@ lib/web/css/source/lib/variables/_messages.less
 
     .social-pins {
           display: none;
+	  position: absolute;
+	  z-index: 2;
+	  right: 10px;
     }
     
     .product-item-info {
@@ -193,7 +196,7 @@ lib/web/css/source/lib/variables/_messages.less
             &:hover,
             &.active {
                 .social-pins {
-                     display: inline;
+                     display: block;
                  }
             }
         }
