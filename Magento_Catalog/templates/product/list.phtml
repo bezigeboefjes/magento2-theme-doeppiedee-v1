@@ -54,8 +54,8 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
                      */
                     $productName = $_helper->productAttribute($_product, $_product->getName(), 'name');
                     $productUrl = $_helper->productAttribute($_product, $_product->getProductUrl(), 'product_url');
-                    $productImage = $_product->getImageUrl();
-                    $pinterestHref = "https://pinterest.com/pin/create/button/?url=".urlencode($productUrl)."&media=".urlencode($productImage)."&description=".urlencode($productName);
+                    $productImageUrl = $block->getImage($_product, $image)->getImageUrl();
+                    $pinterestHref = "https://pinterest.com/pin/create/button/?url=".urlencode($productUrl)."&media=".urlencode($productImageUrl)."&description=".urlencode($productName);
                 ?>
                 <div class="social-pins">
                     <a href="<?php echo($pinterestHref); ?>" onclick="window.open('<?php echo($pinterestHref); ?>','newwindow','width=450,height=700'); return false;"><img align="right" src='/static/pinterest.png' width='40' height='40'></a>
